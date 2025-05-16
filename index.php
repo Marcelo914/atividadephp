@@ -1,6 +1,8 @@
 <?php
 require_once 'conexao.php';
 
+
+$stmt = $pdo->query("SELECT * FROM produtos ORDER BY id DESC");
 $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
